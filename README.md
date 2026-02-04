@@ -5,7 +5,7 @@
 
 ## Prerequisites
 
-- Create and start an AWS EMR Cluster (e.g., 1 master node + N core nodes).
+- Create and start an AWS EMR Cluster (e.g., 1 master node + N core nodes)..
 
 ## Instructions
 
