@@ -1,6 +1,5 @@
 # Word Count Streaming using MapReduce + Python
 
-- **`wiki-input`**: Contains the dataset file `corpus.txt` (Simple English Wikipedia dump).
 - **`mapper.py`**: The Mapper function.
 - **`reducer.py`**: The Reducer function.
 
@@ -26,9 +25,11 @@
     hdfs dfs -mkdir wiki-input
     ```
 
-4. **Put the dataset file into the created directory.**
+4. **Upload dataset to local file system and copy it to HDFS.**
     ```bash
-    hdfs dfs -put corpus.txt wiki-input
+    wget https://github.com/LGDoor/Dump-of-Simple-English-Wiki/raw/refs/heads/master/corpus.tgz
+    tar -xvzf corpus.tgz
+    hdfs dfs -put corpus.txt /user/hadoop/input/
     ```
 
 5. **Locate the required `hadoop-streaming.jar` file.**
