@@ -1,0 +1,4 @@
+The dataset used in this project is the **Simple English Wikipedia dump**, saved as `corpus.txt`.  
+It contains articles written in simplified English with shorter sentences and a limited vocabulary, making it easier to process for text mining tasks.  
+This dataset is large enough to demonstrate distributed processing with Hadoop MapReduce, while still lightweight compared to the full English Wikipedia.  
+In this project, the text is stored in HDFS under the `wiki-input` directory and used as input for the Word Count job.
